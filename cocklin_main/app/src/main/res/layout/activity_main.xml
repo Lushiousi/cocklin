@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/trackinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <EditText
+        android:id="@+id/searchtrack"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="244dp"
+        android:ems="10"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/trackinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="91dp"
+        android:layout_height="102dp"
+        android:background="@drawable/triangle_button"
+        android:backgroundTint="@color/white"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="40sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/trackinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchtrack"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="goon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trackinfo" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="Pause Track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trackinfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
